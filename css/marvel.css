@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Narnoor&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Narnoor', serif;
+
+}
+
+body {
+    background-image: linear-gradient(to left, #140d11, #1a1619, #1f1c21, #252429, #2a2b31, #2c2c31, #2d2c32, #2f2d32, #2c282b, #282324, #231e1e, #1d1a19);
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+
+
+/******************************************************** main container ******************************************/
+.container {
+    margin-top: 80px;
+    color: white;
+    width: 100%;
+
+}
+
+h5.title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.8rem;
+    text-align: start;
+    width: 100%;
+}
+
+/*********************** row1 *********************/
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+/* col 1 */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.banner p {
+    color: rgb(209, 203, 203);
+}
+
+.poster {
+    height: 350px;
+}
+
+.poster img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/* col 2 */
+.movie-data {
+    height: fit-content;
+}
+
+p.title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    text-align: start;
+    width: 100%;
+}
+
+
+.movie-data .text {
+    text-align: justify;
+    padding: 20px 0;
+}
+
+.watch-btn {
+    height: 50px;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+.watch-btn:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.watch-btn img {
+    height: 100%;
+    object-fit: contain;
+}
+
+/*********************** row2 **************************/
+.type-headers {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    margin: 40px;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(55, 55, 75);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.col-sm-10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.types .card {
+    width: 30% !important;
+    /* height: ; */
+    position: relative;
+    cursor: pointer;
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.types .card .type-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.type-image img {
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.types .card .card-body {
+    opacity: 1;
+    color: white;
+}
+
+.types .badge{
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.types .badge:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.types .badge{
+    margin: 10px;
+}
+
+
+/******************************************************* Responsive css ***********************************************/
+@media screen and (max-width:1000px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .watch-btn {
+        right: 80px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width:760px) {
+    .poster {
+        height: 300px;
+    }
+
+    .movie-data {
+        padding: 0;
+    }
+
+    .movie-type {
+        width: 200px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    #favourites {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mybtn {
+        display: block;
+    }
+
+    .navbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .navbar-brand .logo1 {
+        display: none;
+    }
+
+    #favourites {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: none !important;
+    }
+
+    .poster {
+        height: 500px;
+    }
+
+    .movie-data {
+        padding: 0 40px;
+        padding-bottom: 50px;
+    }
+
+    #scroll-text {
+        width: 80%;
+    }
+
+}
+
+
+
+/********************************************************offcanvas *****************************************************************/
+
+.offcanvas {
+    z-index: 20000;
+}
+
+.canvas-nav {
+    list-style-type: none;
+}
+
+.canvas-nav li {
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.canvas-nav li:hover {
+    background-color: rgb(111, 134, 155);
+    cursor: pointer;
+}
+
+.canvas-nav li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.canvas-nav li a p {
+    margin-left: 15px;
+    position: relative;
+    top: 6px;
+}
+
+.canvas-nav li a span {
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: yellow;
+    color: black;
+    padding: 3px;
+}

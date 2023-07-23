@@ -1,0 +1,114 @@
+
+.mybtn {
+    display: none;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 13%;
+}
+
+.navbar-brand .logo1 {
+    height: 45px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+.navbar-brand .logo2 {
+    height: 40px;
+    position: relative;
+    left: 8px;
+}
+
+.navbar-brand .logo1 img {
+    height: 95%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.navbar-brand .logo2 img {
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* navbar search input */
+.input {
+    width: 45%;
+}
+
+.form-control {
+    outline: none !important;
+}
+
+/* navbar watchlist icon */
+#favourites {
+    width: 15%;
+    height: 50px;
+    color: white;
+}
+
+#favourites a img {
+    height: 100%;
+    object-fit: contain;
+}
+
+#favourites a #count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: yellow;
+    color: black;
+    padding: 2px;
+    position: relative;
+    bottom: 50px;
+    left: 140px;
+}
+
+/* scrolling text */
+#scroll-text {
+    height: 50px;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+#scroll-text p {
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-100%);
+    animation: scroll-left 10s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translate(-100%);
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+}

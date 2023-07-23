@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/eab6c7e050.js"
+            crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link href="./css/marvel.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button class="btn mybtn" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <img src="./images/menu.png" height />
+                </button>
+                <a href="./index.html" class="navbar-brand">
+
+                    <div class="logo2">
+                        <img src="./images/marvel.png" />
+                    </div>
+                    <div class="logo1">
+                        <img src="./images/home.png" />
+                    </div>
+                </a>
+                <!-- scroll images in navbar -->
+                <div id="scroll-text">
+                    <p>
+                        <img src="./images/scroll1.png" height="30px" />
+                        <img src="./images/scroll2.png" height="30px" />
+                        <img src="./images/scroll3.png" height="30px" />
+                        <img src="./images/scroll4.png" height="30px" />
+                        <img src="./images/scroll1.png" height="30px" />
+                        <img src="./images/scroll2.png" height="30px" />
+                        <img src="./images/scroll3.png" height="30px" />
+                        <img src="./images/scroll4.png" height="30px" />
+                    </p>
+
+                </div>
+                <div id="favourites">
+                    My favourites
+                    <a href="./favourites.html" target="_blank"
+                        data-bs-toggle="tooltip" data-bs-title="favourites">
+                        <img src="./images/fav.png" />
+                        <span id="count">0</span>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- main -->
+        <div class="container text-center" id="movie">
+            <!-- code via js -->
+            <!-- <div class="row" id="movie">
+                <h5 class="title">Hulk</h5>
+                <div class="col-sm-6 banner">
+
+                    <div class="poster">
+                        <img src="./images/noimage.jpg" class
+                            alt="...">
+                    </div>
+                </div>
+                <div class="col-sm-6 movie-data">
+                    <p class="title">Abouts: </p>
+                    <p class="text">
+                        Formerly known as Emil Blonsky, a spy of Soviet
+                        Yugoslavian origin working for the KGB, the Abomination
+                        gained his powers after receiving a dose of gamma
+                        radiation similar to that which transformed Bruce Banner
+                        into the incredible Hulk.
+                    </p>
+                    <button class="watch-btn" id=${id}>
+                        <img src="./images/video.png" />
+                        Add To Watchlist
+                    </button>
+                </div>
+            </div>
+            <br/>
+            <h5 class="type-headers">COMICS : </h5>
+            <div class="row">
+                <div class="col-sm-10 types">
+
+                    <div class="card">
+                        <div class="type-image">
+                            <img src='./images/noimage.jpg' alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5>Irredeemable Ant-Man
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="type-image">
+                            <img src='./images/noimage.jpg' alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5>Irredeemable Ant-Man
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="type-image">
+                            <img src='./images/noimage.jpg' alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5>Irredeemable Ant-Man
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="type-headers">SERIES : </p>
+            <div class="row">
+                <div class="col-sm-10 types">
+                    <div class="card">
+                        <div class="type-image">
+                            <img src='./images/noimage.jpg' alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5>Irredeemable Ant-Man
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="type-image">
+                            <img src='./images/noimage.jpg' alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5>Irredeemable Ant-Man
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="type-image">
+                            <img src='./images/noimage.jpg' alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5>Irredeemable Ant-Man
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="type-headers">STORIES : </p>
+            <div class="row">
+                <div class="col-sm-10 types">
+                    <p class="badge text-bg-info">name1</p>
+                    <p class="badge text-bg-info">name2</p>
+                    <p class="badge text-bg-info">name3</p>
+
+                </div>
+            </div>
+            <p class="type-headers">EVENTS : </p>
+            <div class="row">
+                <div class="col-sm-10 types">
+
+                    <span class="badge text-bg-info">name1</span>
+                    <span class="badge text-bg-info">name2</span>
+                    <span class="badge text-bg-info">name3</span>
+
+                </div>
+            </div> -->
+        </div>
+
+        <!-- off canvas for smaller screens-->
+        <div class="offcanvas offcanvas-start" tabindex="-1"
+            id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="canvas-nav">
+                    <li>
+                        <a href="./index.html">
+                            <img src="./images/marvel.png" height="40px" /> <p>HOME</p>
+                        </a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a href="./favourites.html" target="_blank"
+                            data-bs-toggle="tooltip" data-bs-title="favourites">
+                            <img src="./images/fav.png" height="60px" />
+
+                            <span id="count2">0</span>
+                            <p>Favourites</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- bootstrap cdns -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+        <!-- js files -->
+        <script src="./JS/api.js"></script>
+        <script src="./JS/marvel.js"></script>
+        <script src="./JS/home.js"></script>
+    </body>
+</html>
